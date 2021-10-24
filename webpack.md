@@ -21,6 +21,7 @@ JS 模块打包工具 ——> CSS, PNG等各种模块打包工具
 ```js
 // webpack.config.js
 module.exports = {
+    mode: 'production',
     // entry: 'index.js',
     entry: {
         main: 'index.js'
@@ -29,4 +30,22 @@ module.exports = {
 }
 ```
 
+### loader 是什么？
 
+```js
+// webpack.config.js
+module.exports = {
+    mode: 'production',
+    // entry: 'index.js',
+    entry: {
+        main: 'index.js'
+    },
+    output: path.resolve(__dirname, 'bundle'),
+    module: [{
+        test: '\/.png\$',
+        use: {
+            loader: 'file-loader'
+        }
+    }]
+}
+```
