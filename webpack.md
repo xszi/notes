@@ -1,51 +1,40 @@
-## webpack
+## webpack4 学习笔记
 
-### webpack 的发展
+### webpack是什么？
 
-面向过程 ——> 面向对象 ——> 多个js文件（增加http请求）/ 代码不容易维护 ——> JS翻译器（webpack雏形）
+* 发展
+  
+面向过程 ——> 面向对象 ——> 多个js文件（增加http请求）/ 代码不容易维护 ——> JS翻译器 / JS 模块打包工具（webpack雏形）
 
-### 定义
+* 定义
 
-webpack是一个模块打包工具 —— bundler
+webpack是一个包含各类功能的模块打包工具 —— bundler
 
-JS 模块打包工具 ——> CSS, PNG等各种模块打包工具
+* 阅读文档：
 
-阅读文档：
+[概念 —— 模块](https://webpack.docschina.org/concepts/modules/)
+[API —— Modules](https://webpack.docschina.org/api/module-methods/)
+[指南 ——> 起步](https://webpack.docschina.org/guides/getting-started/)
 
-* concepts ——> Module
-* Modules ——> API
-* Guide ——> Get Started
 
-### 打包配置 / 输出内容
+### 什么是loader？
 
-```js
-// webpack.config.js
-module.exports = {
-    mode: 'production',
-    // entry: 'index.js',
-    entry: {
-        main: 'index.js'
-    },
-    output: path.resolve(__dirname, 'bundle')
-}
-```
+    * 图片
+    * 样式
 
-### loader 是什么？
+### 什么是plugins？
 
-```js
-// webpack.config.js
-module.exports = {
-    mode: 'production',
-    // entry: 'index.js',
-    entry: {
-        main: 'index.js'
-    },
-    output: path.resolve(__dirname, 'bundle'),
-    module: [{
-        test: '\/.png\$',
-        use: {
-            loader: 'file-loader'
-        }
-    }]
-}
-```
+    * HtmlWebpackPlugin
+    * CleanWebpackPlugin
+
+### SourceMap
+
+### devServer
+
+    * watch
+    * devServer
+    * node中直接调用运行webpack
+
+### HMR(热更新)
+
+### Babel(处理ES6)
