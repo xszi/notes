@@ -29,6 +29,8 @@ webpack是一个包含各类功能的模块打包工具 —— bundler
 
 ### SourceMap
 
+devTool
+
 ### devServer
 
     * watch
@@ -37,4 +39,39 @@ webpack是一个包含各类功能的模块打包工具 —— bundler
 
 ### HMR(热更新)
 
+* hot
+* hotOnly
+
 ### Babel(处理ES6)
+
+* babel-loader
+* presets
+* polyfill
+
+```json
+// .babelrc
+{
+    presets: [
+        [
+            "@babel/preset-env", {
+                target: {
+                    chrome: '67'
+                },
+                useBuiltIns: 'usage'
+            }
+        ],
+        "@babel/preset-react"
+    ]
+}
+```
+
+### 打包环境的区分 production / development
+
+webpack-merge
+
+### Code Splitting & Tree-Shaking
+
+代码分割的两种方式：
+
+1. 同步代码在webpack中配置；
+2. 异步加载代码无需配置会自动打包出一个新的文件；
