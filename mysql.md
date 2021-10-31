@@ -19,3 +19,8 @@ mysqladmin -u root -p password 123456 // 会跳出输入旧密码
 **注意左侧下面的TAB： Administration / Schemas**
 
 4. 项目连接数据库
+
+* `cmd`命令行进入mysql安装目录，启动数据库
+```
+mysql -u root -p
+```
