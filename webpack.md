@@ -75,3 +75,14 @@ webpack-merge
 
 1. 同步代码在webpack中配置；
 2. 异步加载代码无需配置会自动打包出一个新的文件；
+
+### optimization ——> splitChunksPlugin
+
+splitChunksPlugin：
+
+* async：提高性能（异步）
+* all：方便缓存（包括同步）
+
+### 懒加载 / chunk
+
+### 代码使用率 ——> 异步加载
