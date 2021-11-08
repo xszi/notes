@@ -86,3 +86,27 @@ splitChunksPlugin：
 ### 懒加载 / chunk
 
 ### 代码使用率 ——> 异步加载
+
+### CSS文件的代码分割
+
+    * MiniCssExtractPlugin
+
+### webpack和浏览器缓存（caching）
+
+    * contenthash
+
+### Shimming(垫片)
+
+    * imports-loader
+    * webpack.ProvidePlugin
+
+### 环境变量
+
+
+###　案列环节：
+
+#### Library打包
+
+* external
+* library
+* libraryTarget: 'umd'
