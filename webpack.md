@@ -110,3 +110,9 @@ splitChunksPlugin：
 * external
 * library
 * libraryTarget: 'umd'
+
+#### PWA的打包配置
+
+* service-worker (页面缓存)
+
+#### Typescript的打包配置

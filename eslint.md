@@ -16,3 +16,7 @@
     "semi": false
 }
 ```
+
+### vscode格式化配置与Eslint的格式配置冲突，可将vscode中的配置全部删除
+
+设置 ——> 命令面板 ——> User/settings.json
