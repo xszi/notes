@@ -116,3 +116,33 @@ splitChunksPlugin：
 * service-worker (页面缓存)
 
 #### Typescript的打包配置
+
+#### 使用WebpackDevServer实现请求转发
+
+charles fiddler
+```js
+devServer: {}
+bypass
+target
+pathRewrite
+path
+historyApiFallback
+```
+
+
+#### Eslint 的打包配置
+
+#### webpack性能优化
+
+1. 跟上技术迭代（node，npm，yarn）
+2. 尽可能少的使用loader， plugin
+3. 文件设置别名
+4. DllPlugin (重要，特别是对于大型项目)
+5. 控制包文件大小
+6. thread-loader, parallel-webpack, happypack 多进程打包
+7. 合理使用sourceMap
+8. 结合stats分析打包结果
+9. 开发环境内存编译
+10. 开发环境无用插件剔除
+
+#### 多页面打包
